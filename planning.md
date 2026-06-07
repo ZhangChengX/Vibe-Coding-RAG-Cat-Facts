@@ -143,8 +143,8 @@ flowchart LR
 **Milestone 5 — Generation:**
 - Create generation.py
 - Create a function prompt_generation(query:str, context:List) that retrieves 5 relevent results as context using retrieve(), ignores the result if the score less than 0.6, combines and returns the remain context and query with the following prompt template: 
-"You are a helpful assistant for answering questions based on context about cat facts. 
-Use only the following retrieved context to answer the question. 
+"You are a helpful assistant for answering questions based on cat facts.
+Use only the following retrieved context to answer the question directly.
 If the answer isn't in the context, say you don't know instead of making something up.
 context: [context]
 question: [query]"
