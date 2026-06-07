@@ -151,5 +151,6 @@ question: [query]"
 - Create a function response_generation(prompt:str) that sends the prompt to LLM and returns the response.
 
 **Milestone 6 — Interface:**
-- Create a simple web page as a frontend that contains at least the following UI elements: chat history, chat input, and a button to submit the input.
-- Create app.py as a web backend using Flask to handle the entire workflow described in the Architecture section.
+- Create app.py 
+- Create a simple Gradio (gradio>=6.9.0) web page as a frontend that contains at least the following UI elements: chat history, chat input, and a button to submit the input. Display chat response inside chat history area. When clicking the response, an Accordion is displayed to show a list of what retrieved contexts generated the response, with the score of each context. Add a toggle state so clicking the same response again closes the accordion. The list in accordion used smaller and grey font style. Do not generate html and css file, use Gradio syntax only.
+- Create a backend server to handle the entire workflow described in the Architecture section.

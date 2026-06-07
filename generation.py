@@ -19,8 +19,8 @@ GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
 # dropped from the context.
 SCORE_THRESHOLD = 0.6
 
-PROMPT_TEMPLATE = """You are a helpful assistant for answering questions based on context about cat facts.
-Use only the following retrieved context to answer the question.
+PROMPT_TEMPLATE = """You are a helpful assistant for answering questions based on cat facts.
+Use only the following retrieved context to answer the question directly.
 If the answer isn't in the context, say you don't know instead of making something up.
 context: {context}
 question: {query}"""

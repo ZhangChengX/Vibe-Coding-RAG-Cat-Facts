@@ -126,7 +126,7 @@ if __name__ == "__main__":
 
     eval_questions = [
         "Can cats taste sweets?",
-        "How long does a cat pregnant?",
+        "How long are cats pregnant?",
         "How many muscles does cats have to control the outer ear?",
         "What is the smallest pedigreed cat?",
         "What is the biggest wildcat?",
