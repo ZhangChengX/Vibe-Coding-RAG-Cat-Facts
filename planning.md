@@ -136,13 +136,13 @@ flowchart LR
 
 **Milestone 4 — Embedding and retrieval:**
 - Create retrieval.py
-- Create helper variables to hold ChromaDB client and collection used by internal functions.
+- Create helper variables _client and _collection to hold ChromaDB client and collection used by internal functions, Store the ChromaDB file in ./chroma_db folder .
 - Create a function embedding(file_name:str, chunks:List) that embeds the list of chunks and stores the list of the raw chunk with corresponding embedding and source(file_name) into the ChromaDB vector database.
 - Create a function retrieve(query:str, n_results:int) that searchs the top n_results relevent results and returns the list of result ranked by similarity score, each item in the list need to contain text, score, and source.
 
 **Milestone 5 — Generation:**
 - Create generation.py
-- Create a function prompt_generation(query:str, context:List) that combines and return the context and query with the following prompt template: 
+- Create a function prompt_generation(query:str, context:List) that retrieves 5 relevent results as context using retrieve(), ignores the results if the score less than 0.5, combines and returns the remain context and query with the following prompt template: 
 "You are a helpful assistant for answering questions based on context about cat facts. 
 Use only the following retrieved context to answer the question. 
 If the answer isn't in the context, say you don't know instead of making something up.
