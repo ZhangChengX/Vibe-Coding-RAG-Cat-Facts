@@ -216,3 +216,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# macOS
+.DS_Store
+
+# ChromaDB local storage
+chroma_db/
+chroma/
+
+# API keys
+.env
