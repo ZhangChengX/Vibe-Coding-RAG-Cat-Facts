@@ -132,7 +132,7 @@ flowchart LR
 **Milestone 3 — Ingestion and chunking:**
 - Create chunking.py
 - Create a function load_document(file_name:str) that loads txt file in documents folder and returns the text content.
-- Create a function chunk_document(document:str) that splits the document by line into a list of chunk.
+- Create a function chunk_document(document:str) that splits the document by line or paragraph into a list of chunk. If the document contains multiple paragraphs separated by a blank line, then each paragraph is a chunk, otherwise, each line is a chunk. Ignore the chunk if it only contains blank line or space.
 
 **Milestone 4 — Embedding and retrieval:**
 - Create retrieval.py
