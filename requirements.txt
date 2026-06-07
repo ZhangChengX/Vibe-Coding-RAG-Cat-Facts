@@ -1,7 +1,7 @@
 sentence-transformers==3.4.1
 chromadb>=0.6.0
 groq==0.15.0
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 
 # Document ingestion — main-content web extraction for Milestone 2:
 trafilatura==2.0.0
