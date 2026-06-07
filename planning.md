@@ -142,7 +142,7 @@ flowchart LR
 
 **Milestone 5 — Generation:**
 - Create generation.py
-- Create a function prompt_generation(query:str, context:List) that retrieves 5 relevent results as context using retrieve(), ignores the results if the score less than 0.5, combines and returns the remain context and query with the following prompt template: 
+- Create a function prompt_generation(query:str, context:List) that retrieves 5 relevent results as context using retrieve(), ignores the result if the score less than 0.6, combines and returns the remain context and query with the following prompt template: 
 "You are a helpful assistant for answering questions based on context about cat facts. 
 Use only the following retrieved context to answer the question. 
 If the answer isn't in the context, say you don't know instead of making something up.
@@ -152,4 +152,4 @@ question: [query]"
 
 **Milestone 6 — Interface:**
 - Create a simple web page as a frontend that contains at least the following UI elements: chat history, chat input, and a button to submit the input.
-- Create a web backend using Flask to handle the entire workflow described in the Architecture section.
+- Create app.py as a web backend using Flask to handle the entire workflow described in the Architecture section.
